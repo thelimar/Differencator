@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[cp1251]{inputenc}
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\definecolor{urlcolor}{HTML}{799B03}
+\begin{document}
+\begin{center}
+\Large Отчет о выполнении лабораторной работы 1.1.3/4
+\end{center}
+\begin{center}
+\LARGE {\bf Взятие сложной производной}\\
+\end{center}
+\begin{center}
+\normalsize Кафедра \sout{дедовских наук} высшей математики МФТИ от 15.12.2020
+\end{center}
+Взятие производных сложных функций, безусловно, является важнейшим достижением человеческой эволюции, и, несомненно, 
+продемонстрировать дифференциирование на конкретном примере - это долг каждого обучающегося.\\
+\section{Производная}
+Возьмем производную функции
+\begin{equation}
+\ln (\cos (3\cdot (\cos \ln x)+5\cdot (x^{6})))
+\end{equation}
+
+Бомоновцы дифференцировали дифференцировали да не выдифференцировали
+\begin{center}
+\\
+\\${(x)}^\prime = 1$\\
+\\
+\end{center}
+Ну тут либо вот это понять, либо в армейку
+\begin{center}
+\\
+\\${(x^{6})}^\prime = x^{6-1}\cdot 6\cdot 1$\\
+\\
+\end{center}
+ВЖУХ и первое выражение преобразуется во второе
+\begin{center}
+\\
+\\${(5)}^\prime = 0$\\
+\\
+\end{center}
+Лейбниц нашептал на ушко, что
+\begin{center}
+\\
+\\${(5\cdot (x^{6}))}^\prime = 0\cdot (x^{6})+5\cdot (x^{6-1}\cdot 6\cdot 1)$\\
+\\
+\end{center}
+Мне следующее очевидно, а вам?
+\begin{center}
+\\
+\\${(x)}^\prime = 1$\\
+\\
+\end{center}
+Лейбниц нашептал на ушко, что
+\begin{center}
+\\
+\\${(\cos \ln x)}^\prime = \frac{1}{x}$\\
+\\
+\end{center}
+ПАМАГИТЕ МАКС ЗАСТАВЛЯЕТ ПИСАТЬ ШУТКИ
+\begin{center}
+\\
+\\${(3)}^\prime = 0$\\
+\\
+\end{center}
+Все семинары матанализа я, конечно, проспал, но даже для меня это очевидно
+\begin{center}
+\\
+\\${(3\cdot (\cos \ln x))}^\prime = 0\cdot (\cos \ln x)+3\cdot (\frac{1}{x})$\\
+\\
+\end{center}
+ПАМАГИТЕ МАКС ЗАСТАВЛЯЕТ ПИСАТЬ ШУТКИ
+\begin{center}
+\\
+\\${(3\cdot (\cos \ln x)+5\cdot (x^{6}))}^\prime = 0\cdot (\cos \ln x)+3\cdot (\frac{1}{x})+0\cdot (x^{6})+5\cdot (x^{6-1}\cdot 6\cdot 1)$\\
+\\
+\end{center}
+ВЖУХ и первое выражение преобразуется во второе
+\begin{center}
+\\
+\\${(\cos (3\cdot (\cos \ln x)+5\cdot (x^{6})))}^\prime = (-\sin (3\cdot (\cos \ln x)+5\cdot (x^{6})))\cdot (0\cdot (\cos \ln x)+3\cdot (\frac{1}{x})+0\cdot (x^{6})+5\cdot (x^{6-1}\cdot 6\cdot 1))$\\
+\\
+\end{center}
+Все семинары матанализа я, конечно, проспал, но даже для меня это очевидно
+\begin{center}
+\\
+\\${(\ln (\cos (3\cdot (\cos \ln x)+5\cdot (x^{6}))))}^\prime = \frac{(-\sin (3\cdot (\cos \ln x)+5\cdot (x^{6})))\cdot (0\cdot (\cos \ln x)+3\cdot (\frac{1}{x})+0\cdot (x^{6})+5\cdot (x^{6-1}\cdot 6\cdot 1))}{\cos (3\cdot (\cos \ln x)+5\cdot (x^{6}))}$\\
+\\
+\end{center}После некоторого количества преобразований приходим к окончательному и неоспоримому ответу
+\begin{equation}\frac{(-\sin (3\cdot (\cos \ln x)+5\cdot (x^{6})))\cdot (3\cdot (\frac{1}{x})+A)}{\cos (3\cdot (\cos \ln x)+5\cdot (x^{6}))}
+\end{equation}\\
+где A = 
+\begin{equation}
+5\cdot (x^{5}\cdot 6)
+\end{equation}
+\section{Вывод}
+В работе получена формула приозводной заданной функции. Работа выполненна профессионалами и не рекомендуется к выполнениюслабонервным людям, беременным женщинам и особо невнимательным простофилям. Отдельная благодарность спонсорам работы - компании Black Monster Energy\texttrademark.
+\section{Список используемой литературы}
+\begin{enumerate}
+\item Кудрявцев Л Д, К у т а с о в А Д, Чехлов В И, Шабунин М ИСборник задач по математическому анализу.Том 1 Предел.Не -прерывность.Дифференцируемость Учеб пособие / Под ред Л Д Кудрявцева — 2 - е изд, перераб ISBN 5 - 9221 - 0306 - 7.
+\item Великая Бибилия Древних Руссов в переводе Черниковой Л.П.
+\item Черникова Л.П. Гастроли Ф.И. Шаляпина по Дальнему Востоку оказались роковыми... (монография). Уфа, РИЦ БашГУ, 2008. – 162 с. 12,46 п.л.
+\item Гитхаб одного красавца \url{https://github.com/thelimar/Differencator}
+\end{enumerate}
+\end{document}
