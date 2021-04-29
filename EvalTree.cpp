@@ -117,23 +117,6 @@ void NodeBufferPut (struct NodeBuffer* dis, struct Node* node);
 void NodeBufferDestruct (struct NodeBuffer* dis);
 void NodeBufferBuild (struct NodeBuffer* dis);
 
-/*
-int main()
-{
-
-	struct Tree* tree1 = TreeBuild(ADD, FUNC);
-	
-	AddNodeLeft(tree1, tree1->root, 2.45, CONST);
-
-	char x[] = "x";
-	AddNodeRight(tree1, tree1->root, 0, VAR, x, NAN);
-
-	TreeTextDump(tree1->root, tree1);
-
-
-	return 0;
-}
-*/
 
 struct Node* CreateNodeCopy (struct Tree* dis, struct Node* left, struct Node* right, TreeData node_data, int node_type)
 {
